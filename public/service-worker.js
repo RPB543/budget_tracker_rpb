@@ -18,8 +18,8 @@ const FILES_TO_CACHE = [
   '/icons/icon-512x512.png'
 ];
 
-self.addEventListener('install', function (e) {
-    e.waitUntil(
+self.addEventListener('install', function (evt) {
+    evt.waitUntil(
         caches.open(CACHE_NAME).then(function (cache) {
             console.log("Your files were pre-cached successfully!")
             return cache.addAll(FILES_TO_CACHE)
@@ -28,8 +28,8 @@ self.addEventListener('install', function (e) {
     self.skipWaiting();
 })
 
-self.addEventListener('activate', function(e) {
-    e.waitUntil(
+self.addEventListener('activate', function(evt) {
+    evt.waitUntil(
       caches.keys().then(function(keyList) {
           return Promise.all(
             keyList.map(key => {
