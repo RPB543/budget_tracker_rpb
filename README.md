@@ -6,6 +6,7 @@
 - [Project Criteria](#project-criteria)  
 - [Instructions](#instructions)  
 - [Built With](#built-with)
+- [Screenshot](#screenshot)
 - [Links](#links)  
 
 ## Objective
@@ -27,6 +28,16 @@ There are two options to access the budget tracker.  First, it can be accessed o
 - MongoDB
 - Javascript
 - Heroku
+
+## Screenshot
+
+- Screenshot of adding an item offline
+
+![Offline Screenshot](/public/icons/offline.png)
+
+- Screenshot of when the applications comes online again
+
+![Online Screenshot](/public/icons/online.png)
 
 ## Links
 
